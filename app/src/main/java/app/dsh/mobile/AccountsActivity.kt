@@ -70,9 +70,14 @@ class AccountsActivity : ThemedActivity() {
         findViewById<ImageView>(R.id.btnBack).setOnClickListener { finish() }
     }
 
-    /** onResume：从设置页返回或切回前台时刷新插件写回的状态。 */
+    /**
+     * onResume：从设置页返回或切回前台时刷新插件写回的状态。
+     * 同时重新对齐一次朝向偏好 —— 否则从外观页返回本页时，本页仍持有上一次的
+     * requestedOrientation，会把屏幕扳回去（见 scripts/probes/_test_responsive_native_ui.py）。
+     */
     override fun onResume() {
         super.onResume()
+        OrientationPrefs.applyToSettingsPage(this)
         reload()
     }
 
