@@ -1147,4 +1147,41 @@ A aplicação será reiniciada pelo sistema para recarregar a tabela de grupos �
     <string name="sensitive_audit_body">%1$s
 Se não é isso que você quer, desligue o botão de %2$s na Central de permissões.</string>
     <string name="personal_cap_disabled_hint">Ative este item em Central de permissões → Recursos de dispositivo da IA. Os quatro botões de dados pessoais são concedidos separadamente.</string>
+
+    <!-- ==================== Model accounts (multi API key per provider) ==================== -->
+    <string name="accounts_title">Contas de modelo</string>
+    <string name="accounts_sub">Várias chaves de API por provedor, com a estratégia de troca que você escolher. As chaves ficam neste aparelho.</string>
+    <string name="accounts_hint_engine">O motor aplica a troca na próxima requisição - sem reiniciar e sem recarregar a WebUI.</string>
+    <string name="accounts_empty">Nenhum provedor ainda. Configure o provedor na WebUI em Modelos e depois adicione-o aqui para gerenciar várias chaves.</string>
+    <string name="accounts_mode">Estratégia de troca</string>
+    <string name="accounts_mode_manual">Manual</string>
+    <string name="accounts_mode_error">Em erro</string>
+    <string name="accounts_mode_roundrobin">Rodízio</string>
+    <string name="accounts_mode_off">Desligado</string>
+    <string name="accounts_active">Ativa</string>
+    <string name="accounts_reason_error">trocada após erro</string>
+    <string name="accounts_reason_roundrobin">rodízio</string>
+    <string name="accounts_reason_start">aplicada na inicialização</string>
+    <string name="accounts_reason_manual">manual</string>
+    <string name="accounts_add_provider">Adicionar provedor</string>
+    <string name="accounts_add_account">Adicionar conta</string>
+    <string name="accounts_switch_now">Trocar agora</string>
+    <string name="accounts_delete">Remover</string>
+    <string name="accounts_delete_account_title">Remover conta?</string>
+    <string name="accounts_delete_provider_title">Remover provedor?</string>
+    <string name="accounts_delete_body">%1$s será removido. A chave continua no cofre de credenciais até outra conta substituí-la.</string>
+    <string name="accounts_saved">Salvo</string>
+    <string name="accounts_invalid_key">Informe uma chave de API primeiro</string>
+    <string name="accounts_dup_ref">Essa referência de credencial já está em uso</string>
+    <string name="accounts_ref_invalid">Uma referência parece MY_API_KEY</string>
+    <string name="accounts_cooldown">(em espera)</string>
+    <string name="accounts_account_label">Nome</string>
+    <string name="accounts_account_default">Conta %1$d</string>
+    <string name="accounts_key_label">Chave de API</string>
+    <string name="accounts_label_hint">Nome exibido (opcional)</string>
+    <string name="accounts_ref_hint">Referência de credencial, ex. OPENROUTER_API_KEY</string>
+    <string name="accounts_no_accounts">Nenhuma conta gerenciada ainda - a chave definida na página Modelos da WebUI continua valendo.</string>
+    <string name="accounts_need_two">Ative pelo menos duas contas primeiro</string>
+    <string name="settings_accounts">Contas de modelo</string>
+    <string name="settings_accounts_sub">Várias chaves de API por provedor: adicionar, ativar, trocar</string>
 </resources>

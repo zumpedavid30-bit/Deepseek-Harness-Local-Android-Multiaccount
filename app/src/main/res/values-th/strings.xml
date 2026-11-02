@@ -1129,4 +1129,41 @@
     <string name="sensitive_audit_body">%1$s
 หากไม่ต้องการ ให้ปิดสวิตช์%2$sในศูนย์สิทธิ์</string>
     <string name="personal_cap_disabled_hint">เปิดรายการนี้ในศูนย์สิทธิ์ → ความสามารถอุปกรณ์ของ AI สวิตช์ข้อมูลส่วนบุคคลทั้งสี่แยกอนุญาตกัน</string>
+
+    <!-- ==================== Model accounts (multi API key per provider) ==================== -->
+    <string name="accounts_title">บัญชีโมเดล</string>
+    <string name="accounts_sub">ใช้ API key หลายอันต่อผู้ให้บริการ พร้อมเลือกวิธีสลับได้ Key เก็บไว้ในเครื่องนี้เท่านั้น</string>
+    <string name="accounts_hint_engine">เอนจินจะใช้การสลับในคำขอถัดไป - ไม่ต้องรีสตาร์ตและไม่ต้องรีโหลด WebUI</string>
+    <string name="accounts_empty">ยังไม่มีผู้ให้บริการ ตั้งค่าผู้ให้บริการใน WebUI หน้า Models ก่อน แล้วค่อยเพิ่มที่นี่เพื่อจัดการหลาย key</string>
+    <string name="accounts_mode">วิธีสลับ</string>
+    <string name="accounts_mode_manual">กำหนดเอง</string>
+    <string name="accounts_mode_error">เมื่อเกิดข้อผิดพลาด</string>
+    <string name="accounts_mode_roundrobin">หมุนเวียน</string>
+    <string name="accounts_mode_off">ปิด</string>
+    <string name="accounts_active">ใช้งานอยู่</string>
+    <string name="accounts_reason_error">สลับหลังเกิดข้อผิดพลาด</string>
+    <string name="accounts_reason_roundrobin">หมุนเวียน</string>
+    <string name="accounts_reason_start">ใช้ตอนเริ่มระบบ</string>
+    <string name="accounts_reason_manual">กำหนดเอง</string>
+    <string name="accounts_add_provider">เพิ่มผู้ให้บริการ</string>
+    <string name="accounts_add_account">เพิ่มบัญชี</string>
+    <string name="accounts_switch_now">สลับทันที</string>
+    <string name="accounts_delete">ลบ</string>
+    <string name="accounts_delete_account_title">ลบบัญชี?</string>
+    <string name="accounts_delete_provider_title">ลบผู้ให้บริการ?</string>
+    <string name="accounts_delete_body">จะลบ %1$s โดย key จะยังอยู่ในที่เก็บข้อมูลรับรองจนกว่าบัญชีอื่นจะมาแทน</string>
+    <string name="accounts_saved">บันทึกแล้ว</string>
+    <string name="accounts_invalid_key">กรอก API key ก่อน</string>
+    <string name="accounts_dup_ref">มีการใช้ชื่ออ้างอิงนี้แล้ว</string>
+    <string name="accounts_ref_invalid">ชื่ออ้างอิงมีรูปแบบเช่น MY_API_KEY</string>
+    <string name="accounts_cooldown">(พักชั่วคราว)</string>
+    <string name="accounts_account_label">ชื่อ</string>
+    <string name="accounts_account_default">บัญชี %1$d</string>
+    <string name="accounts_key_label">API key</string>
+    <string name="accounts_label_hint">ชื่อที่แสดง (ไม่บังคับ)</string>
+    <string name="accounts_ref_hint">ชื่ออ้างอิงข้อมูลรับรอง เช่น OPENROUTER_API_KEY</string>
+    <string name="accounts_no_accounts">ยังไม่มีบัญชีที่จัดการ - key ที่ตั้งไว้ในหน้า Models ของ WebUI ยังมีผลอยู่</string>
+    <string name="accounts_need_two">เปิดใช้อย่างน้อยสองบัญชีก่อน</string>
+    <string name="settings_accounts">บัญชีโมเดล</string>
+    <string name="settings_accounts_sub">หลาย API key ต่อผู้ให้บริการ: เพิ่ม เปิดใช้ สลับ</string>
 </resources>

@@ -1194,4 +1194,41 @@
     <string name="sensitive_audit_body">%1$s
 如果这不是你想要的，去「权限中心」关掉%2$s开关。</string>
     <string name="personal_cap_disabled_hint">在「权限中心 → AI 设备能力」单独打开这一项；四项个人数据是分开授权的。</string>
+
+    <!-- ==================== Model accounts (multi API key per provider) ==================== -->
+    <string name="accounts_title">模型账号</string>
+    <string name="accounts_sub">一个服务商可挂多把 API Key，并选择切换策略。Key 只留在这台设备上。</string>
+    <string name="accounts_hint_engine">引擎在下一个请求就生效——不用重启，也不用刷新 WebUI。</string>
+    <string name="accounts_empty">还没有服务商。先在 WebUI 的模型页把服务商配好，再在这里添加它以管理多把 Key。</string>
+    <string name="accounts_mode">切换策略</string>
+    <string name="accounts_mode_manual">手动</string>
+    <string name="accounts_mode_error">出错时</string>
+    <string name="accounts_mode_roundrobin">轮询</string>
+    <string name="accounts_mode_off">关闭</string>
+    <string name="accounts_active">当前</string>
+    <string name="accounts_reason_error">出错后切换</string>
+    <string name="accounts_reason_roundrobin">轮询</string>
+    <string name="accounts_reason_start">启动时应用</string>
+    <string name="accounts_reason_manual">手动</string>
+    <string name="accounts_add_provider">添加服务商</string>
+    <string name="accounts_add_account">添加账号</string>
+    <string name="accounts_switch_now">立即切换</string>
+    <string name="accounts_delete">移除</string>
+    <string name="accounts_delete_account_title">移除账号？</string>
+    <string name="accounts_delete_provider_title">移除服务商？</string>
+    <string name="accounts_delete_body">%1$s 将被移除。在另一个账号替换它之前，凭证库里的 Key 保持不变。</string>
+    <string name="accounts_saved">已保存</string>
+    <string name="accounts_invalid_key">请先填入 API Key</string>
+    <string name="accounts_dup_ref">该凭证引用已被使用</string>
+    <string name="accounts_ref_invalid">引用形如 MY_API_KEY</string>
+    <string name="accounts_cooldown">（冷却中）</string>
+    <string name="accounts_account_label">名称</string>
+    <string name="accounts_account_default">账号 %1$d</string>
+    <string name="accounts_key_label">API Key</string>
+    <string name="accounts_label_hint">显示名（可选）</string>
+    <string name="accounts_ref_hint">凭证引用，例如 OPENROUTER_API_KEY</string>
+    <string name="accounts_no_accounts">还没有受管理的账号——WebUI 模型页里设置的 Key 继续生效。</string>
+    <string name="accounts_need_two">请先启用至少两个账号</string>
+    <string name="settings_accounts">模型账号</string>
+    <string name="settings_accounts_sub">一个服务商多把 API Key：新增、启用、切换</string>
 </resources>

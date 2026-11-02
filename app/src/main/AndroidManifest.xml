@@ -1566,6 +1566,12 @@
             android:exported="false"
             android:configChanges="orientation|screenSize|keyboardHidden" />
 
+        <!-- 模型账号（v1.6.0）：多账号 API key 的增删/启停/切换策略 -->
+        <activity
+            android:name=".AccountsActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
         <!-- 日志查看器（engine.log / boot.log 尾部） -->
         <activity
             android:name=".LogViewerActivity"

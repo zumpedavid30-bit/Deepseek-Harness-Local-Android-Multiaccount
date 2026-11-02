@@ -1193,4 +1193,41 @@ Die App wird vom System neu gestartet, um die Gruppentabelle neu zu laden — da
     <string name="sensitive_audit_body">%1$s
 Wenn du das nicht willst, schalte den Schalter für %2$s im Berechtigungscenter aus.</string>
     <string name="personal_cap_disabled_hint">Aktiviere diesen Punkt im Berechtigungscenter → KI-Gerätefähigkeiten. Die vier Schalter für persönliche Daten werden getrennt erteilt.</string>
+
+    <!-- ==================== Model accounts (multi API key per provider) ==================== -->
+    <string name="accounts_title">Modell-Konten</string>
+    <string name="accounts_sub">Mehrere API-Keys pro Anbieter, mit der Wechsel-Strategie deiner Wahl. Die Keys bleiben auf diesem Gerät.</string>
+    <string name="accounts_hint_engine">Die Engine übernimmt einen Wechsel beim nächsten Request - ohne Neustart und ohne WebUI-Reload.</string>
+    <string name="accounts_empty">Noch kein Anbieter. Richte den Anbieter zuerst in der WebUI unter Models ein und füge ihn dann hier hinzu, um mehrere Keys zu verwalten.</string>
+    <string name="accounts_mode">Wechsel-Strategie</string>
+    <string name="accounts_mode_manual">Manuell</string>
+    <string name="accounts_mode_error">Bei Fehler</string>
+    <string name="accounts_mode_roundrobin">Round Robin</string>
+    <string name="accounts_mode_off">Aus</string>
+    <string name="accounts_active">Aktiv</string>
+    <string name="accounts_reason_error">nach einem Fehler gewechselt</string>
+    <string name="accounts_reason_roundrobin">Round Robin</string>
+    <string name="accounts_reason_start">beim Start übernommen</string>
+    <string name="accounts_reason_manual">manuell</string>
+    <string name="accounts_add_provider">Anbieter hinzufügen</string>
+    <string name="accounts_add_account">Konto hinzufügen</string>
+    <string name="accounts_switch_now">Jetzt wechseln</string>
+    <string name="accounts_delete">Entfernen</string>
+    <string name="accounts_delete_account_title">Konto entfernen?</string>
+    <string name="accounts_delete_provider_title">Anbieter entfernen?</string>
+    <string name="accounts_delete_body">%1$s wird entfernt. Der Key bleibt im Credential-Store, bis ein anderes Konto ihn ersetzt.</string>
+    <string name="accounts_saved">Gespeichert</string>
+    <string name="accounts_invalid_key">Bitte zuerst einen API-Key eingeben</string>
+    <string name="accounts_dup_ref">Diese Credential-Referenz wird bereits verwendet</string>
+    <string name="accounts_ref_invalid">Eine Referenz sieht so aus: MY_API_KEY</string>
+    <string name="accounts_cooldown">(Abklingzeit)</string>
+    <string name="accounts_account_label">Name</string>
+    <string name="accounts_account_default">Konto %1$d</string>
+    <string name="accounts_key_label">API-Key</string>
+    <string name="accounts_label_hint">Anzeigename (optional)</string>
+    <string name="accounts_ref_hint">Credential-Referenz, z. B. OPENROUTER_API_KEY</string>
+    <string name="accounts_no_accounts">Noch kein verwaltetes Konto - der Key aus der WebUI-Models-Seite bleibt aktiv.</string>
+    <string name="accounts_need_two">Zuerst mindestens zwei Konten aktivieren</string>
+    <string name="settings_accounts">Modell-Konten</string>
+    <string name="settings_accounts_sub">Mehrere API-Keys pro Anbieter: anlegen, aktivieren, wechseln</string>
 </resources>

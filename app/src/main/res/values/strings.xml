@@ -1187,4 +1187,41 @@ The app will be restarted by the system to reload its group table — that is no
     <string name="sensitive_audit_body">%1$s
 If this is not what you want, turn off the %2$s switch in Permission center.</string>
     <string name="personal_cap_disabled_hint">Turn this item on in Permission center → AI device capabilities. The four personal-data switches are granted separately.</string>
+
+    <!-- ==================== Model accounts (multi API key per provider) ==================== -->
+    <string name="accounts_title">Model accounts</string>
+    <string name="accounts_sub">Several API keys per provider, with the switch strategy you pick. Keys stay on this device.</string>
+    <string name="accounts_hint_engine">The engine applies a switch on the next request - no restart, no WebUI reload.</string>
+    <string name="accounts_empty">No provider yet. Set the provider up in the WebUI under Models first, then add it here to manage several keys for it.</string>
+    <string name="accounts_mode">Switch strategy</string>
+    <string name="accounts_mode_manual">Manual</string>
+    <string name="accounts_mode_error">On error</string>
+    <string name="accounts_mode_roundrobin">Round robin</string>
+    <string name="accounts_mode_off">Off</string>
+    <string name="accounts_active">Active</string>
+    <string name="accounts_reason_error">switched after an error</string>
+    <string name="accounts_reason_roundrobin">round robin</string>
+    <string name="accounts_reason_start">applied at start</string>
+    <string name="accounts_reason_manual">manual</string>
+    <string name="accounts_add_provider">Add provider</string>
+    <string name="accounts_add_account">Add account</string>
+    <string name="accounts_switch_now">Switch now</string>
+    <string name="accounts_delete">Remove</string>
+    <string name="accounts_delete_account_title">Remove account?</string>
+    <string name="accounts_delete_provider_title">Remove provider?</string>
+    <string name="accounts_delete_body">%1$s will be removed. The key stays in the credential store until another account replaces it.</string>
+    <string name="accounts_saved">Saved</string>
+    <string name="accounts_invalid_key">Enter an API key first</string>
+    <string name="accounts_dup_ref">That credential reference is already in use</string>
+    <string name="accounts_ref_invalid">A reference looks like MY_API_KEY</string>
+    <string name="accounts_cooldown">(cooling down)</string>
+    <string name="accounts_account_label">Name</string>
+    <string name="accounts_account_default">Account %1$d</string>
+    <string name="accounts_key_label">API key</string>
+    <string name="accounts_label_hint">Display name (optional)</string>
+    <string name="accounts_ref_hint">Credential reference, e.g. OPENROUTER_API_KEY</string>
+    <string name="accounts_no_accounts">No managed account yet - the key set in the WebUI Models page stays in effect.</string>
+    <string name="accounts_need_two">Enable at least two accounts first</string>
+    <string name="settings_accounts">Model accounts</string>
+    <string name="settings_accounts_sub">Multiple API keys per provider: add, enable, switch</string>
 </resources>

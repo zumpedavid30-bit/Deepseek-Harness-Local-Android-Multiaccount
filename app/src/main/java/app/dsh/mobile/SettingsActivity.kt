@@ -157,6 +157,10 @@ class SettingsActivity : ThemedActivity() {
         findViewById<LinearLayout>(R.id.rowExtensionVoice).setOnClickListener {
             startActivity(Intent(this, ExtensionVoiceActivity::class.java))
         }
+        // v1.6.0：模型账号 —— 一个 provider 下挂多把 API key（新增/启停/切换策略）
+        findViewById<LinearLayout>(R.id.rowAccounts).setOnClickListener {
+            startActivity(Intent(this, AccountsActivity::class.java))
+        }
         if (savedLayout != SettingsLayoutMode.LIST) {
             // 布局参数改动需要在视图完成布局后进行
             findViewById<View>(R.id.columnPrimary)?.post { applyLayoutMode(savedLayout) }

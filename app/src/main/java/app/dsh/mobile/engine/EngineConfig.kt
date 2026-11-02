@@ -1257,6 +1257,19 @@ object EngineConfig {
             |    - id: android-fast-mode
             |      name: ./android-plugins/fast-mode.mjs
             |
+            |# Multi-account API keys (v1.6.0): one credential reference (e.g.
+            |# OPENROUTER_API_KEY) can hold several keys. The app writes the list into
+            |# dsh-home/multi-account.json; this plugin is the only writer of the
+            |# credential store (ctx.credentials.set()), so the store keeps its
+            |# cross-process lock. It applies the active key at boot, advances it per
+            |# model step (round robin) and fails over on rate-limit / quota / auth
+            |# errors by returning { kind: retry } from the agent/request-error
+            |# waterfall - registered with prepend so it runs before dsh-llm-retry
+            |# burns the retry budget on the exhausted key.
+            |- insert:
+            |    - id: android-multi-account
+            |      name: ./android-plugins/multi-account.mjs
+            |
             |# Device capability tools (P5): status, controlled hardware, persistent reminders,
              |# and the low-level radio layer (real BLE advertising / GATT / RFCOMM payloads,
              |# BLE scanning with raw manufacturer data, HCI text log, WiFi scan/link/capture).
@@ -1349,6 +1362,7 @@ object EngineConfig {
                 "device-tools.mjs",
                 "plugin-health.mjs",
                 "open-file.mjs",
+                "multi-account.mjs",
             ).forEach { fileName ->
                 val src = ctx.assets.open("android-plugins/$fileName").use { it.readBytes() }
                 val dst = File(f.parentFile, "android-plugins/$fileName")
